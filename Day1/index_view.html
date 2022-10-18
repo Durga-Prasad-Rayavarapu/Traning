@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View</title>
+    <!-- boostrap CSS only -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="./Assets/css/index_view.css">
+</head>
+<body onload="getItems()">
+    <script src="./Assets/Js/index.js"></script>
+    <table>
+        <thead>
+          <th>S.NO</th>
+            <th>Name</th>
+            <th>Phone_Number</th>
+            <th>Email</th>
+            <th>Password</th>
+            <th>Gender</th>
+            <th>State</th>
+            <th>Languaage</th>
+            <th>Address</th>
+            <th>Edit/Delete</th>
+        </thead>
+        <tbody id="demo">
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        </tbody>
+    </table>
+    <div class="container">
+      <!-- Trigger the modal with a button -->
+      <!-- <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button> -->
+    
+      <!-- Modal -->
+      <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+        
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Modal Header</h4>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="exampleInputName">Name</label>
+                  <input type="text" class="form-control" id="exampleInputName" aria-describedby="Name" placeholder="Enter Name">
+                  <label for="exampleInputName">Phone_Number</label>
+                  <input type="number" class="form-control" id="exampleInputNumber" aria-describedby="Number" placeholder="Enter Phone_Number">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                  <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+                <div class="form-check">
+                  <strong>Gender:-</strong><br>
+                  <input class="form-check-input Male" type="radio" name="exampleRadios" id="exampleRadios1" value="Male">
+                    <label class="form-check-label" for="exampleRadios1">
+                      Male
+                    </label>
+                    <input class="form-check-input Female" type="radio" name="exampleRadios" id="exampleRadios2" value="Female">
+                    <label class="form-check-label" for="exampleRadios1">
+                      Female
+                    </label>
+                    </div>
+                  <div class="form-check">
+                  <strong>Langues:-</strong><br>
+                  <input type="checkbox" class="form-check-input Telugu" id="exampleCheck1" name="checkbox">
+                  <label class="form-check-label" for="exampleCheck1">Telugu</label>
+                  <input type="checkbox" class="form-check-input Hindi" id="exampleCheck2">
+                  <label class="form-check-label " for="exampleCheck1">Hindi</label>
+                  <input type="checkbox" class="form-check-input English" id="exampleCheck3">
+                  <label class="form-check-label" for="exampleCheck1">English</label>
+                </div>
+                <strong>State:-</strong>
+                <select class="custom-select custom-select-sm" id="exampleSelect1">
+                  <option value="Andhra Pradesh">Andhra Pradesh</option>
+                  <option value="Tamilnadu">Tamilnadu</option>
+                  <option value="Karnataka">Karnataka</option>
+                      </select><br>
+                <strong>Address:-</strong><br>
+                <textarea id="textarea1"></textarea>
+              </div>
+              
+              <div class="text-center">
+                <button type="submit" class="btn btn-primary" id="save">Save</button>
+                </div>
+              </form>
+            </div>
+            <!-- <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div> -->
+          </div>
+          
+        </div>
+      </div>
+      
+    </div>
+    
+
+    <!-- <table class=" table table-hover">
+        <thead class="table-dark">
+          <tr>
+            <th scope="row">S.NO</th>
+            <th scope="col">NAME</th>
+            <th scope="col">PHONE_NUMBER</th>
+            <th scope="col">EMAIL</th>
+            <th scope="col">PASSWORD</th>
+            <th scope="col">GENDER</th>
+            <th scope="col">STATE</th>
+            <th scope="col">LANGAUGE</th>
+            <th scope="col">ADDRESS</th>
+          </tr>
+        </thead>
+        <tbody class="tbody">
+          <tr id="demo">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+            </tbody>
+      </table> -->
+</body>
+</html>

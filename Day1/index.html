@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document1</title>
+    <!-- <link rel="icon" type="image/x-icon" href="Assets\Images\Rhibhus.jpeg">
+    <base href="Assets/" target="_blank"> -->
+      <!---javascript start here-->
+    
+    <!-- <link rel="JavaScript" href="./Assets/Js/index.js" class="js"> -->
+        <!-----javascript End here-->
+        <link rel="stylesheet" href="./Assets/css/index.css">
+
+</head>
+<body>
+    <!-- <h2>This is h2 tag--Block level</h2>
+    <h3>This is h3 tag--Block level</h3>
+    <h4>This is h4 tag--Block level</h4>
+    <h5>This is h5 tag--Block level</h5>
+    <h6>This is h6 tag--Block level</h6>    
+    <diV>
+    <p>Paragraph tag Block-></p><b>Bold tag--Inline</b>
+        <span> 
+            Span Tag--Inline
+        </span>
+        <i>Italic-inline</i>
+        <abbr title="It displays name when mouse is hover on ">Abbr tag-inline</abbr>
+    </p>
+    <a href="https://play-lh.googleusercontent.com/JRd05pyBH41qjgsJuWduRJpDeZG0Hnb0yjf2nWqO7VaGKL10-G5UIygxED-WNOc3pg" alt="image">Achor</a>
+    <address>Written by <a href="mailto:webmaster@example.com">Jon Doe</a>
+        Address tag--block level
+        </address>
+        <br>
+    </diV>
+    <div>
+    <iframe src="https://en.wikipedia.org/wiki/Elon_Musk" title="iframe tag"></iframe>
+</div>
+<div></div>
+    <img src="Assets/Images/Rhibhus.jpeg"  alt="image" width="500px" height="400px">
+    <ol  type="A">
+        Order list
+        <li value="20">Dinesh</li>
+        <li> Chirag</li>
+        <li>Amiya</li>
+        <li>Dog</li>
+        <li>cat</li>
+    </ol>
+    <ul style="list-style:circle">
+        Unorder list
+        <li>pen</li>
+        <li>book</li>
+    </ul>
+    <table border="1">
+        <tbody>
+            <th>1 Header</th>
+            <th>2 Header</th>
+            <th>3 Header</th>
+        </tbody>
+        <tr>
+            <td>1 data</td>
+            <td>2 data</td>
+            <td>3 data</td>
+        </tr>
+        <tr>
+            <td>4 data</td>
+            <td>5 data</td>
+            <td>6 data</td>
+        </tr>
+        <tr>
+            <td>7 data</td>
+            <td>8 data</td>
+            <td>9 data</td>
+        </tr>
+    </table>
+    <hr> -->
+    <!----------------Form start here----------------->
+     <!-- <form action=''> -->
+        <fieldset>
+            <legend>Registration Form</legend>
+        <table>
+            <tr>
+                <td>
+        <label for="Name">Name:-</label></td>
+        <td>
+        <input type="text" placeholder="Enter Name" id="Name" required>
+        </td>
+        </tr>
+        <tr><td>
+            <label for="num">Phone_Number:-</label>
+        </td>
+        <td>
+            <input type="number" placeholder="Enter Number" id='num'><br> 
+        </td></tr>
+        <tr><td>
+            <label for="email">Email:-</label>
+        </td>
+    <td>
+        <input type="email" placeholder="Enter email" id="email"><br>
+    </td></tr>
+    <tr>
+        <td>
+            <label>Password:-</label>
+        </td>
+        <td>
+            <input type="password" placeholder="Enter Password" id="psw">
+        </td>
+    </tr>
+    <tr>
+        <td><label>Gender:-</label></td>
+    </tr>
+    <tr>
+        <td><input type="radio" name="radiobutton" value="Male" id="rb1"  class="radio1">Male</td>
+        <td>
+            <input type="radio" name="radiobutton" value="Female" id="rb2"  class="radio1">Female
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label>Choose State:-</label>
+          <select name="state"  id="state">
+            <option value="Andhra Pradesh">Andhra Pradesh</option>
+            <option value="Tamilnadu">Tamilnadu</option>
+            <option value="Karnataka">Karnataka</option>
+          </select>  
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label>Langauges:-</label>
+        </td>
+        <tr id="lang">
+            <td><input type="checkbox" name="lang" value="Telugu" id="lang1" class="lang">Telugu</td>
+            <td><input type="checkbox" name="lang" value="English" id="lang2" class="lang">English</td>
+            <td><input type="checkbox" name="lang" value="Hindi" id="lang3" class="lang">Hindi</td>
+        </tr>
+    </tr>
+    <tr>
+        <td>
+        <label>Address:-</label>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <textarea placeholder="Enter your address" id="address"></textarea>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="3" >
+            <button  onclick="add()">Add</button>
+        </td>
+        <td colspan="3" >
+            <a href="./index_view.html"><button>ViewDetails</button></a>
+        </td>
+    </tr>
+    </table>
+    </fieldset>
+     <!-- </form> -->
+    <script src="./Assets/Js/index.js"></script>
+    <!--------------Form End Here---------------->
+    <!-- <div>
+        <h3><b>Map</b></h1>
+            <p>Map:-Define a image maping</p>
+        <h3><b>Area:-</b></h3>
+        <p>Defines a area inside an image map</p>
+        <caption>Example:-Move curser on to image</caption>
+        <img src="Assets/Images//workspace.jpg" usemap="#workspace">
+        <map name="workspace">
+            <area target="_blank" alt="computer" href="https://www.techtarget.com/whatis/definition/IFrame-Inline-Frame#:~:text=What%20is%20inline%20frame%20(iframe,web%20analytics%20and%20interactive%20content." coords="1375,636,559,107" shape="rect">
+    </div>
+    <div>
+        
+    </div>
+    <div>
+        <article>
+            <h2>Article tag</h2>
+            <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+            </article>
+    </div>
+    <div>
+        <h2>Address Tag:-</h2>
+        <address>
+            Written by <a href="mailto:webmaster@example.com">Jon Doe</a>.<br>
+            Visit us at:<br>
+            Example.com<br>
+            Box 564, Disneyland<br>
+            USA
+            </address>
+    </div>
+    <div>
+        <h2>aside tag:-</h2>
+        <aside>
+            <h4>Epcot Center</h4>
+            <p>aside </p>
+            </aside>
+    </div>
+    <div>
+        <h2>Audio Tag is block level </h2>
+        <audio controls>
+            <source src="horse.ogg" type="audio/ogg">
+        </audio>
+    
+    </div>
+    <div>
+        <h2>Break tag is block level</h2>
+        <p><p>This is normal text - <b>and this is bold text</b>.</p>
+    </p>
+    </div>
+    <div>
+        <h2>Bi-Directional tag:-</h2>
+        <bdo dir="rtl">This  text  will go right-to-left</bdo>
+    </div>
+   <div>
+    <h2>Blockquote tag:-</h2>
+    <p> The tag specifies a section that is quoted from another source. it is a block level</p>
+    <blockquote>
+        For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.
+    </blockquote>
+    </div> 
+    <div>
+        <h2>Body tag</h2>
+        <p>The body tag defines the document's body and it only one body tag in html document
+        The body element contains all the contents of an HTML document, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.
+        </p>
+    </div>
+    <div>
+        <h2>Base Tag:-</h2>
+        <p><img src="Images/Rhibhus.jpeg" width="400" height="400"></p>
+    </div>
+    <div>
+        <h2>Button Tag:-</h2>
+        <p>The button tag defines a clickable button.
+        Inside a button element you can put text (and tags like i, b, strong, br, img, etc.). That is not possible with a button created with the input tag element!</p>
+    </div>
+    <div>
+        <nav>
+            <a href="/html/">HTML</a> |
+            <a href="/css/">CSS</a> |
+            <a href="/js/">JavaScript</a> |
+            <a href="/python/">Python</a>
+          </nav>
+    </div> -->
+
+<!-- <script>
+    function add(){
+    let Name =document.getElementById('Name').value
+    let Phone_number=document.getElementById('num').value
+    let Gmail =document.getElementById('email').value
+    let password=document.getElementById('psw').value
+    let Gender=document.getElementById('radio').value
+
+console.log("Name","Phone_number","Gmail","password","Gender")
+}
+</script> -->
+
+    
+</body>
+</html>

@@ -1,0 +1,10 @@
+table,th,td{
+    border:2px solid black;
+    border-collapse: collapse;
+}
+table{
+    margin: auto;
+}
+.modal-footer{
+    height: 150px;
+}

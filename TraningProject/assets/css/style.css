@@ -1,0 +1,255 @@
+/*---Typography roboto and lora--*/
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Lora:wght@400;500;600;700&family=Roboto:wght@100;400;500;700;900&display=swap');
+/*--Typography roboto and lora--*/
+/*--style css--*/
+/* font-family: 'Comforter Brush', cursive;
+font-family: 'Lora', serif;
+font-family: 'Roboto', sans-serif; */
+/*--style css--*/
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+  }
+  html {
+    /* 62.5% of 16px base font size is 10px */
+    font-size: 62.5%;
+  }
+  /* Preserve 16px body font-size, set body font-size to 1.6rem */
+  .some-element {
+    /* 10 * 1.2 = 12px */
+    font-size: 1.2rem;
+  }
+  body {
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden !important;
+    box-sizing: border-box;
+    font-size: 1.6rem;
+    line-height: 24px;
+  }
+  /*-----grid style-----*/
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  [class*="col-"] {
+    float: left;
+    padding: 15px;
+  }
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+  /*-----grid style------*/
+  /*-----navbar css---*/
+.logo{
+    width: 150px;
+    height: 55px;
+  }
+#hdrNavigation{
+    padding: 0 23.438rem;
+    padding-top: 3px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+.button{
+    background-color:#FF7000;
+  border:none;
+  color: white;
+  padding: 18px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  width: 165px;
+  height: 55px;
+  border-radius: 8px;
+}
+.plusimg{
+    width: 7px;
+    height: 7px;
+}
+.navitems{
+  padding: 2.813rem 0.875rem;
+}
+ul li{
+    list-style: none;
+    display: inline;
+    padding: 2.813rem 0.875rem;
+}
+ul li a{
+  text-decoration: none;
+  color: #333333;
+}
+.text-01:after{
+  padding-left: 10px;
+  /* content:url(/TraningProject/assets/Images/navbarimages/plus.svg) */
+  ;
+}
+/*----navbar--*/
+/*----Heropage styles---*/
+* .heropage{
+  background-image: url(/TraningProject/assets/Images/image1.png);
+  padding: 0 23.438rem;
+  width: 1920px;
+  height: 915px;
+}
+.mainname{
+  padding-top:18rem;
+  padding-bottom:1.438rem;
+  line-height: 69.12px;
+  font-size:3.375rem;
+  font-family: 'Lora', serif;
+  font-weight: 700;
+}
+.mainname span{
+  color: #1100D2;
+}
+.subname{
+  display: inline;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  padding-right: 23.628rem;
+  width: 3125rem;
+  height: 3.125;
+  color:#666666;
+}
+/*----third block----*/
+.thirdblock{
+  padding:12.313rem 45.75rem 0 ;
+}
+
+.ngoinformation{
+  font-family: 'Lora', serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size:3.375rem;
+  text-align: center;
+  line-height: 69px;
+
+}
+.thirdblock-01{
+  padding: 0 23.625rem 2.5rem;
+}
+.ngoicons{
+padding:0 32.125rem 0 19.375rem
+}
+.nagosubname{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.85em;
+  line-height:24px;
+  color: #666666;
+  text-align: center;
+  padding:0  32.813rem;
+
+}
+.thirdblock-02{
+  padding: 2.5rem 0 7.18rem 0;
+}
+.avatar{
+  padding: 25px 30px ;
+}
+
+.dot {
+  height: 90px;
+  width: 90px;
+  background-color:#FF7000;
+  border-radius: 50%;
+  display: inline-block;
+}
+.nginfo{
+ padding: 0 32.125rem;
+}
+.ngicon{
+padding-right:15.313rem;
+}
+.button_01{
+  background-color: #FF7000;
+  width: 191px;
+  height: 55px;
+  padding:17px 36px 19px 37px;
+  border-radius: 5px;
+  color: #FFFFFF;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  display:inline-block;
+  border: none;
+  text-align: center;
+}  
+.buttoninfo{
+  padding: 0 54.063rem;
+  padding-bottom:135px;
+
+}
+
+/*----third block end here----*/
+/*---fourth start here----*/
+.fourthblock{
+  background-color:#444444;
+  width: 1920px;
+  height: 946px;
+  /* padding:19.063rem 23.438rem 12.813rem 60.938rem; */
+  padding: 0 23.438rem;
+}
+/* .drakimg{
+  
+} */
+
+.rectangle{
+  height:27.188rem;
+  width:35.625rem;
+  background-color:#333333;
+  border-radius: 20px;
+} 
+.innerimg{
+  height:240px;
+  width:314px;
+}
+.Urgentcause{
+  padding: 134px 0 32px 0;
+  font-family: 'Lora', serif;
+  font-weight: 700;
+  font-size: 54px;
+  color: #ffffff;
+  line-height: 69.12px;
+}
+.h1{
+  color: #FF7000;
+}
+.schools{
+  font-family: 'Lora', serif;
+  font-weight: 700;
+  font-size:54px;
+  color: #ffffff;
+  padding:5.25rem 0 27px;
+  line-height: 69.12px;
+}
+.pragraph{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #666666;
+}
+.image{
+  padding:0 23.438rem 12.813rem 60.938rem;
+  padding-top: 305px;
+}
+/*---fourth end here----*/

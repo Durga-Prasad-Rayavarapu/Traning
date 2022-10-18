@@ -1,0 +1,84 @@
+h1{
+    color:#ff5!important;
+}
+h1{
+    color: yellow !important ;
+    font-family: 'Comforter Brush', cursive;
+font-family: 'Silkscreen', cursive;
+}
+
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+*,*::after,::before{
+    margin: 0;
+    padding:0;
+    box-sizing: inherit;
+}
+html{
+    /*62.5% of 16px base font size is 10px*/
+    font-size: 62.5%;
+}
+    /*Preserve 16px body font-size,set body font-size to 1.6rem*/
+
+body{
+    /*16px*/
+    font-size: 1.6rem;
+}
+.some-element{
+    /*10*2=12px*/
+    font-size: 1.2rem;
+}
+h1{
+    padding-left: 350px;;
+}
+.b-name{
+    background-color: aqua;
+    margin:20px;
+    padding: 80px 80px;
+}
+.a-name :hover{
+    background-color: blueviolet;
+}
+.c-name .d-name{
+    margin:20px;
+    padding: 30px;
+}
+
+b{
+    float:left;
+    padding-left:150rem;
+}
+
+.d-name{
+    background-color: rgb(80, 96, 146);
+}
+.logo{
+position: relative;
+padding-left: 480px;
+}
+.e-name{
+    height:25vh;
+    background-color: blanchedalmond;
+    margin:20px;
+    padding: 30px;
+}
+.gradiant .f-name{
+    height:20px;
+     background-color: red; /* For browsers that do not support gradients */
+    background-image: linear-gradient(red, yellow);
+    margin:20px;
+    padding: 30px;
+}
+ol{
+    list-style: none;
+}
+ol :nth-child(2n+2){
+    color: red;
+
+}
+.f-name:hover{
+ background-image:url(/Day1/Assets/Images/Rhibhus.jpeg);
+}
