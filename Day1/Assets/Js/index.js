@@ -101,35 +101,40 @@ function edit(id){
           $('#textarea1').val(dta[i].Address);
            let a = dta[i].Gender;
            $('.'+a).prop('checked',true);
-           $("#save").attr("onclick","save("+id+")");
            let lvalue = dta[i].Langague.split(' ');
            for(let j = 0; j < lvalue.length; j++){
                $('.'+lvalue[j]).prop('checked',true);           
  
         }
     }
+    $("#save").attr("onclick","sav("+id+")");
+
 }
 }
 function sav(id){
         let dta1=JSON.parse(localStorage.getItem("studentdata"));
+        
         for(i=0;i<dta1.length;i++){
+            alert('saved')    
             if(dta1[i].uid==id){
               dta1[i].Name=document.getElementById('exampleInputName').value
               dta1[i].Phone_number=document.getElementById('exampleInputNumber').value
               dta1[i].Gmail=document.getElementById('exampleInputEmail').value
               dta1[i].Password=document.getElementById('exampleInputPassword').value
               dta1[i].Gender=document.querySelector('input[type="radio"]:checked').value
-              dta1[i].State=document.getElementById('state').value;
+              dta1[i].State=document.getElementById('exampleSelect1').value;
             let Langague=document.querySelectorAll('input[type="checkbox"]:checked')
               let listolan='';
               for(var checkbox of Langague){
                 listolan += checkbox.value+" ";
             }
             dta1[i].Langague=listolan
-            dta1[i].Address = document.getElementById('address').value;
-
-        }          
+            dta1[i].Address = document.getElementById('textarea').value;
+            
+        }      
              }
+             console.log(dta1)
+
         localStorage.setItem("studentdata",JSON.stringify(dta1));
+        $('.modal').hide()
         }
-    
