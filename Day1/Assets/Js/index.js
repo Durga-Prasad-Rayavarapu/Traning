@@ -69,13 +69,33 @@ function getItems(){
     let tabledata='';
     for(i=0;i<data.length;i++){
         let j = i+1
-        tabledata +='<tr><td>'+j+'</td><td>'+data[i].Name+'</td><td>'+data[i].Phone_number+'</td><td>'+data[i].Gmail+'</td><td>'+data[i].Password+'</td><td>'+data[i].Gender+'</td><td>'+ data[i].State+
+        tabledata +='<tr><td><input type= "checkbox" value="'+data[i].uid+'"></td><td>'+j+'</td><td>'+data[i].Name+'</td><td>'+data[i].Phone_number+'</td><td>'+data[i].Gmail+'</td><td>'+data[i].Password+'</td><td>'+data[i].Gender+'</td><td>'+ data[i].State+
         '</td><td>'+data[i].Langague+'</td><td>'+data[i].Address+'</td><td><button  data-toggle="modal" data-target="#myModal" onclick="edit('+data[i].uid+')">Edit</button><button onclick="del('+data[i].uid+')">Delete</button></td></tr>'
 
     }
     document.getElementById('demo').innerHTML=tabledata
+
+    $(".delall").hide()
+    var checkboxes = document.querySelectorAll('input[type=checkbox]'),
+    checkboxArray = Array.from( checkboxes );
+
+    checkboxArray.forEach(function(checkbox) {
+        checkbox.addEventListener('change', confirmCheck);
+      });
+    
 }
 
+function confirmCheck() {
+    if (this.checked) {
+        $(".delall").show()
+    }
+    else{
+        $(".delall").hide()
+    }
+    
+  }
+
+        
 function del(id){
     let dta =JSON.parse(localStorage.getItem("studentdata"));
     for(i=0;i<dta.length;i++){
@@ -138,3 +158,39 @@ function sav(id){
         localStorage.setItem("studentdata",JSON.stringify(dta1));
         $('.modal').hide()
         }
+
+
+        
+        
+
+        function delall(){ 
+            let markedcheck=document.querySelectorAll('input[type="checkbox"]:checked')
+            let listolan=[]
+            for(var checkbox of markedcheck){
+                // listolan += checkbox.value+" ";
+                listolan.push(checkbox.value)
+            }  
+            // console.log(listolan)
+            let dta =JSON.parse(localStorage.getItem("studentdata"));
+            for(let i=0;i<listolan.length;i++){
+                for (let j = 0; j < dta.length; j++) {
+                    if(listolan[i] == dta[j].uid){
+                        dta.splice(j,1)
+                       
+
+                    }
+                }
+                             
+            localStorage.setItem("studentdata",JSON.stringify(dta));
+            }
+            // console.log(listolan.length,dta.length)
+            //  window.location.reload()
+            
+
+        }
+        $(".delall").attr("onclick","delall()")
+            
+        let markedcheck=document.querySelectorAll('input[type="checkbox"]:checked')
+
+        
+        
