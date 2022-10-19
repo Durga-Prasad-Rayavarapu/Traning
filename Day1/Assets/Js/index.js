@@ -13,25 +13,7 @@ function add(){
         listolan += checkbox.value+" ";
     }
 
-    // if(document.getElementById('rb1').checked){
-    //     Gender=document.getElementById('rb1').value
-    //     console.log(Gender)
-    // }
-    // else if(document.getElementById('rb2').checked){
-    //     Gender=document.getElementById('rb2').value
-    //             console.log(Gender)
-
-    // };
-
-    /*----checked---box---*/
-//     let Langague;
-//     for(var i=0; i<Langaguevalue.length; ++i){
-//         if(Langaguevalue[i].checked){
-//             Langague = langaguevalue[i].value;
-//              break;
-//         }
-//   }
-
+   
     let numformate =/^[-+]?[0-9]+$/;
     let emailformate=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     var passwformate=  /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,15}$/;
@@ -184,13 +166,12 @@ function sav(id){
             localStorage.setItem("studentdata",JSON.stringify(dta));
             }
             // console.log(listolan.length,dta.length)
-            //  window.location.reload()
+             window.location.reload()
             
 
         }
         $(".delall").attr("onclick","delall()")
             
-        let markedcheck=document.querySelectorAll('input[type="checkbox"]:checked')
 
         
         

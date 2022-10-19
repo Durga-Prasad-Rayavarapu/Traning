@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document1</title>
+    
+
+</head>
+<body>
+        <fieldset>
+            <legend>Registration Form</legend>
+        <table>
+            <tr>
+                <td>
+        <label for="Name">Name:-</label></td>
+        <td>
+        <input type="text" placeholder="Enter Name" id="Name" required>
+        </td>
+        </tr>
+        <tr><td>
+            <label for="num">Phone_Number:-</label>
+        </td>
+        <td>
+            <input type="number" placeholder="Enter Number" id='num'><br> 
+        </td></tr>
+        <tr><td>
+            <label for="email">Email:-</label>
+        </td>
+    <td>
+        <input type="email" placeholder="Enter email" id="email"><br>
+    </td></tr>
+    <tr>
+        <td>
+            <label>Password:-</label>
+        </td>
+        <td>
+            <input type="password" placeholder="Enter Password" id="psw">
+        </td>
+    </tr>
+    <tr>
+        <td><label>Gender:-</label></td>
+    </tr>
+    <tr>
+        <td><input type="radio" name="radiobutton" value="Male" id="rb1"  class="radio1">Male</td>
+        <td>
+            <input type="radio" name="radiobutton" value="Female" id="rb2"  class="radio1">Female
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label>Choose State:-</label>
+          <select name="state"  id="state">
+            <option value="Andhra Pradesh">Andhra Pradesh</option>
+            <option value="Tamilnadu">Tamilnadu</option>
+            <option value="Karnataka">Karnataka</option>
+          </select>  
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label>Langauges:-</label>
+        </td>
+        <tr id="lang">
+            <td><input type="checkbox" name="lang" value="Telugu" id="lang1" class="lang">Telugu</td>
+            <td><input type="checkbox" name="lang" value="English" id="lang2" class="lang">English</td>
+            <td><input type="checkbox" name="lang" value="Hindi" id="lang3" class="lang">Hindi</td>
+        </tr>
+    </tr>
+    <tr>
+        <td>
+        <label>Address:-</label>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <textarea placeholder="Enter your address" id="address"></textarea>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="3" >
+            <button  onclick="add()">Add</button>
+        </td>
+        <td colspan="3" >
+            <a href="/Form"><button>ViewDetails</button></a>
+        </td>
+    </tr>
+    </table>
+    </fieldset>
+    
+    <script src="/Js/index.js"></script>
+    
+</body>
+</html>
