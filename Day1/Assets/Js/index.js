@@ -1,4 +1,3 @@
-//let maindata=[]
 function add(){
     let Name =document.getElementById('Name').value;
     let Phone_number=document.getElementById('num').value;
@@ -13,7 +12,25 @@ function add(){
         listolan += checkbox.value+" ";
     }
 
-   
+    // if(document.getElementById('rb1').checked){
+    //     Gender=document.getElementById('rb1').value
+    //     console.log(Gender)
+    // }
+    // else if(document.getElementById('rb2').checked){
+    //     Gender=document.getElementById('rb2').value
+    //             console.log(Gender)
+
+    // };
+
+    /*----checked---box---*/
+//     let Langague;
+//     for(var i=0; i<Langaguevalue.length; ++i){
+//         if(Langaguevalue[i].checked){
+//             Langague = langaguevalue[i].value;
+//              break;
+//         }
+//   }
+
     let numformate =/^[-+]?[0-9]+$/;
     let emailformate=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     var passwformate=  /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,15}$/;
@@ -51,33 +68,13 @@ function getItems(){
     let tabledata='';
     for(i=0;i<data.length;i++){
         let j = i+1
-        tabledata +='<tr><td><input type= "checkbox" value="'+data[i].uid+'"></td><td>'+j+'</td><td>'+data[i].Name+'</td><td>'+data[i].Phone_number+'</td><td>'+data[i].Gmail+'</td><td>'+data[i].Password+'</td><td>'+data[i].Gender+'</td><td>'+ data[i].State+
+        tabledata +='<tr><td>'+j+'</td><td>'+data[i].Name+'</td><td>'+data[i].Phone_number+'</td><td>'+data[i].Gmail+'</td><td>'+data[i].Password+'</td><td>'+data[i].Gender+'</td><td>'+ data[i].State+
         '</td><td>'+data[i].Langague+'</td><td>'+data[i].Address+'</td><td><button  data-toggle="modal" data-target="#myModal" onclick="edit('+data[i].uid+')">Edit</button><button onclick="del('+data[i].uid+')">Delete</button></td></tr>'
 
     }
     document.getElementById('demo').innerHTML=tabledata
-
-    $(".delall").hide()
-    var checkboxes = document.querySelectorAll('input[type=checkbox]'),
-    checkboxArray = Array.from( checkboxes );
-
-    checkboxArray.forEach(function(checkbox) {
-        checkbox.addEventListener('change', confirmCheck);
-      });
-    
 }
 
-function confirmCheck() {
-    if (this.checked) {
-        $(".delall").show()
-    }
-    else{
-        $(".delall").hide()
-    }
-    
-  }
-
-        
 function del(id){
     let dta =JSON.parse(localStorage.getItem("studentdata"));
     for(i=0;i<dta.length;i++){
@@ -140,38 +137,3 @@ function sav(id){
         localStorage.setItem("studentdata",JSON.stringify(dta1));
         $('.modal').hide()
         }
-
-
-        
-        
-
-        function delall(){ 
-            let markedcheck=document.querySelectorAll('input[type="checkbox"]:checked')
-            let listolan=[]
-            for(var checkbox of markedcheck){
-                // listolan += checkbox.value+" ";
-                listolan.push(checkbox.value)
-            }  
-            // console.log(listolan)
-            let dta =JSON.parse(localStorage.getItem("studentdata"));
-            for(let i=0;i<listolan.length;i++){
-                for (let j = 0; j < dta.length; j++) {
-                    if(listolan[i] == dta[j].uid){
-                        dta.splice(j,1)
-                       
-
-                    }
-                }
-                             
-            localStorage.setItem("studentdata",JSON.stringify(dta));
-            }
-            // console.log(listolan.length,dta.length)
-             window.location.reload()
-            
-
-        }
-        $(".delall").attr("onclick","delall()")
-            
-
-        
-        
