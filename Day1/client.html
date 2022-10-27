@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    </head>
+    <body>
+        <button onclick="call_apis()">submit</button>
+    </body>
+
+    <script>
+        function call_apis()
+        {
+            $.post("http://localhost:3007/post_api/", { name : "rhibhus", password : 1234 }, 
+
+            function(data, status){
+                alert("DATA : "+ JSON.stringify(data));
+                console.log(data);
+            })
+            .fail(function (xhr) {
+                switch (xhr.status) {
+                    case 500:
+                        alert('Invalid credentials!'); // User not registered
+                        break;
+                    case 501:
+                        alert('Invalid credentials!'); // Invalid Password
+                        break;
+                    case 502:
+                        alert('DB Session Error!');
+                        break;
+                    default:
+                        alert('Default Error!');
+                        break;
+                }
+            })
+            
+        }
+    </script>
+</html>

@@ -1,4 +1,3 @@
-//let maindata=[]
 function add(){
     let Name =document.getElementById('Name').value;
     let Phone_number=document.getElementById('num').value;
