@@ -36,15 +36,28 @@ function signup(){
         
         let userdata={'uid':uid,'Name':Username,'Phone_number':Phone_number,'Gmail':Gmail,'Password':Password}
         // maindata.push(userdata)
-        pastdata.push(userdata1)
+        pastdata.push(userdata)
         localStorage.setItem('userdata',JSON.stringify(pastdata));
         
     }
 }
 
-function sinin(){
-    let username = document.getElementById().value
-    let password = document.getElementById().value
-    let userdata = localStorage.getItem('userdata')
-
+function signIn(){
+    let username = document.getElementById('name').value
+    let password = document.getElementById('psw').value
+    let userdata = JSON.parse(localStorage.getItem('userdata'));
+    // alert('its working')
+    console.log(username,password)
+    for(i=0;i<userdata.length;i++){
+        if(username==userdata[i].Name && password==userdata[i].Password){
+            window.location='/mainpage'
+        }
+        else{
+            alert('cerdintials wrong')
+        }
+        console.log(userdata[i].Name,userdata[i].Password)
+    }
+    window.location.pathname("/mainpage")
 }
+
+

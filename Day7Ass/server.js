@@ -57,6 +57,7 @@ var server = http.createServer(app);
 //                 res.sendStatus(200);    //ok
 //             }
 //             // else{
+
 //         }
 //         if (i == cerdits.length) {
 //             console.log('validation error')

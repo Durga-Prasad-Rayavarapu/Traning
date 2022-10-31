@@ -5,8 +5,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../public/assests/css/cart.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+
 </head>
-<body>
-    <h1>hello</h1>
+<body onload="cart()">
+    <!-- <div class="container">
+        <div class="divTable div-hover">
+            
+                <div class="rowTable bg-primary text-white pb-2">
+                    <div class="divTableCol">Product</div>
+                    <div class="divTableCol">Discreption</div>
+                    <div class="divTableCol">Quantity</div>
+                    <div class="divTableCol">Price</div>
+                    <div class="divTableCol">Total</div>
+                    <div class="divTableCol">Actions</div>
+                </div>
+                <div class="rowTable" id="cart">
+                    <div class="divTableCol"></div>
+                    <div class="divTableCol"></div>
+                    <div class="divTableCol"></div>
+                    <div class="divTableCol"></div>
+                    <div class="divTableCol"></div>
+                </div>
+            </div>     
+            <div class="container">
+                <button type="button" class="btn btn-success btn-lg">CHECK OUT</button>
+            </div>
+        </div>
+    </div> -->
+    <table>
+        <thead>
+          <tr>
+            <th scope="col">Product</th>
+            <th scope="col">Discreption</th>
+            <th scope="col">Quantity</th>
+            <th scope="col">price</th>
+            <th scope="col">ToalAmount</th>
+            <th> Action</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="app">
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><button>Remove</button> <button>Add</button></td>
+            <td>Checkout</td>
+          </tr>
+        
+        </tbody>
+      </table>
+    <script src="../public/Js/mainpage.js"></script>
 </body>
 </html>

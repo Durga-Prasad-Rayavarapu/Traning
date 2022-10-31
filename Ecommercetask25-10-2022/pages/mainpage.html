@@ -6,24 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../public/assests/css/mainpage.css">
+    <link rel="stylesheet" href="assests/css/mainpage.css">
+    <!-- CSS only -->
+<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"> -->
 </head>
-<body>
+<body onload="getitems()">
     <div class="container">
         <div class="navbar">
           <div class="logo">
-            <a href="mainpage.html"><img src="https://i.ibb.co/kDVwgwp/logo.png" alt="RedStore" width="125px" /></a>
+            <a href="mainpage.html"><img src="assests/images/logo (1).png" alt="RedStore" width="125px" /></a>
           </div>
           <nav>
             <ul id="MenuItems">
-              <li><a href="mainpage.html">Home</a></li>
+              <li><a href="/mainpage">Home</a></li>
               <li><a href="#">Products</a></li>
               <li><a href="#">About</a></li>
               <li><a href="#">Contact</a></li>
               <li><a href="#">Account</a></li>
             </ul>
           </nav>
-          <a href="cart.html"><img src="https://i.ibb.co/PNjjx3y/cart.png" alt="" width="30px" height="30px" /></a>
+          <a href="/cart"><img src="https://i.ibb.co/PNjjx3y/cart.png" alt="" width="30px" height="30px" /></a>
           <img src="https://i.ibb.co/6XbqwjD/menu.png" alt="" class="menu-icon" onclick="menutoggle()" />
         </div>
       </div>
@@ -39,229 +41,16 @@
             <option value="">Short by sale</option>
           </select>
         </div>
-        <div class="row">
-          <div class="col-4">
-            <img src="https://i.ibb.co/47Sk9QL/product-1.jpg" alt="" />
-            <h4>Red Printed T-shirt</h4>
-            <div class="rating">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="far fa-star"></i>
-            </div>
-            <p>₹500.00</p>
-          </div>
-      
-          <div class="col-4">
-            <img src="https://i.ibb.co/b7ZVzYr/product-2.jpg" alt="" />
-            <h4>Red Printed T-shirt</h4>
-            <div class="rating">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="far fa-star"></i>
-              <i class="far fa-star"></i>
-            </div>
-            <p>₹500.00</p>
-          </div>
-      
-          <div class="col-4">
-            <img src="https://i.ibb.co/KsMVr26/product-3.jpg" alt="" />
-            <h4>Red Printed T-shirt</h4>
-            <div class="rating">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star-half-alt"></i>
-            </div>
-            <p>₹500.00</p>
-          </div>
-      
-          <div class="col-4">
-            <img src="https://i.ibb.co/0cMfpcr/product-4.jpg" alt="" />
-            <h4>Red Printed T-shirt</h4>
-            <div class="rating">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="far fa-star"></i>
-              <i class="far fa-star"></i>
-              <i class="far fa-star"></i>
-            </div>
-            <p>₹500.00</p>
-          </div>
-        </div>
-      
-        <div class="row">
-          <div class="col-4">
-            <img src="https://i.ibb.co/47Sk9QL/product-1.jpg" alt="" />
-            <h4>Red Printed T-shirt</h4>
-            <div class="rating">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="far fa-star"></i>
-            </div>
-            <p>₹500.00</p>
-          </div>
-      
-          <div class="col-4">
-            <img src="https://i.ibb.co/b7ZVzYr/product-2.jpg" alt="" />
-            <h4>Red Printed T-shirt</h4>
-            <div class="rating">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="far fa-star"></i>
-              <i class="far fa-star"></i>
-            </div>
-            <p>₹500.00</p>
-          </div>
-      
-          <div class="col-4">
-            <img src="https://i.ibb.co/KsMVr26/product-3.jpg" alt="" />
-            <h4>Red Printed T-shirt</h4>
-            <div class="rating">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star-half-alt"></i>
-            </div>
-            <p>₹500.00</p>
-          </div>
-      
-          <div class="col-4">
-            <img src="https://i.ibb.co/0cMfpcr/product-4.jpg" alt="" />
-            <h4>Red Printed T-shirt</h4>
-            <div class="rating">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="far fa-star"></i>
-              <i class="far fa-star"></i>
-              <i class="far fa-star"></i>
-            </div>
-            <p>₹500.00</p>
-          </div>
-        </div>
-      
-        <div class="row">
-          <div class="col-4">
-            <img src="https://i.ibb.co/bQ5t8bR/product-5.jpg" alt="" />
-            <h4>Red Printed T-shirt</h4>
-            <div class="rating">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="far fa-star"></i>
-            </div>
-            <p>₹500.00</p>
-          </div>
-      
-          <div class="col-4">
-            <img src="https://i.ibb.co/vVpTyBD/product-6.jpg" alt="" />
-            <h4>Red Printed T-shirt</h4>
-            <div class="rating">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="far fa-star"></i>
-              <i class="far fa-star"></i>
-            </div>
-            <p>₹500.00</p>
-          </div>
-      
-          <div class="col-4">
-            <img src="https://i.ibb.co/hR5FGwH/product-7.jpg" alt="" />
-            <h4>Red Printed T-shirt</h4>
-            <div class="rating">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star-half-alt"></i>
-            </div>
-            <p>₹500.00</p>
-          </div>
-      
-          <div class="col-4">
-            <img src="https://i.ibb.co/QfCgdXZ/product-8.jpg" alt="" />
-            <h4>Red Printed T-shirt</h4>
-            <div class="rating">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="far fa-star"></i>
-              <i class="far fa-star"></i>
-              <i class="far fa-star"></i>
-            </div>
-            <p>₹500.00</p>
-          </div>
-        </div>
-      
-        <div class="row">
-          <div class="col-4">
-            <img src="https://i.ibb.co/nw5xZwk/product-9.jpg" alt="" />
-            <h4>Red Printed T-shirt</h4>
-            <div class="rating">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="far fa-star"></i>
-            </div>
-            <p>₹500.00</p>
-          </div>
-      
-          <div class="col-4">
-            <img src="https://i.ibb.co/9HCsmjf/product-10.jpg" alt="" />
-            <h4>Red Printed T-shirt</h4>
-            <div class="rating">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="far fa-star"></i>
-              <i class="far fa-star"></i>
-            </div>
-            <p>₹500.00</p>
-          </div>
-      
-          <div class="col-4">
-            <img src="https://i.ibb.co/JQ2MBHR/product-11.jpg" alt="" />
-            <h4>Red Printed T-shirt</h4>
-            <div class="rating">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star-half-alt"></i>
-            </div>
-            <p>₹500.00</p>
-          </div>
-      
-          <div class="col-4">
-            <img src="https://i.ibb.co/nRZMs6Y/product-12.jpg" alt="" />
-            <h4>Red Printed T-shirt</h4>
-            <div class="rating">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="far fa-star"></i>
-              <i class="far fa-star"></i>
-              <i class="far fa-star"></i>
-            </div>
-            <p>₹500.00</p>
-          </div>
-        </div>
-      
-        <div class="page-btn">
+        <div class="row" id="demo">
+        
+          
+        <!-- <div class="page-btn">
           <span>1</span>
           <span>2</span>
           <span>3</span>
           <span>4</span>
           <span>&#8594;</span>
-        </div>
+        </div> -->
       </div>
       
       <!-- Footer -->
@@ -324,6 +113,11 @@
         }
       </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<script src="Js/mainpage.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
 
 </body>
 </html>
